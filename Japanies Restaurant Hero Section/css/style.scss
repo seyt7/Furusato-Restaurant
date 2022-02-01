@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fdf0d5;
+  height: 100vh;
+  font-size: 62.5%;
+  color: #000;
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+.nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  max-width: 105rem;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+}
+.logo {
+  height: 100px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  list-style: none;
+}
+.navigation-links {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+  font-size: 1.2rem;
+  position: relative;
+
+  &:hover {
+    color: #c1121f;
+    transition: 0.3s;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #000;
+    transition: width 0.3s ease-in-out;
+    border-radius: 1rem;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0;
+    background: #000;
+  }
+}
+.hero-section {
+  max-width: 105rem;
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-left-title {
+  font-size: 6.8rem;
+  font-weight: 200;
+  color: #c1121f;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+.hero-left-header {
+  font-size: 3.8rem;
+  color: #000;
+  padding-bottom: 1.2rem;
+}
+.hero-left-header-red {
+  color: #c1121f;
+  line-height: 1.6;
+}
+.hero-left-paragraph {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  padding-bottom: 4rem;
+}
+.hero-left-button {
+  padding: 1rem 4.2rem;
+  font-size: 1.2rem;
+  background-color: #c1121f;
+  border: none;
+  color: #fff;
+  border-radius: 0.4rem;
+  &:hover {
+    background-color: #880d15;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}
+.hero-right-image {
+  height: 42rem;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+@import "./media";
